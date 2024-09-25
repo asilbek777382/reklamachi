@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uz" dir="ltr" class="h-100">
+
+<head>
+    <title>Guruplar yordamchisi - Telegram bot guruplarni boshqarish va himoya qilish uchun</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="icon" href="gh.png" type="image/png">
+    <link rel="canonical" href="https://www.grouphelp.top/uz">
+    <link rel="shortcut icon" href="https://www.grouphelp.top/gh.png">
+    <link rel="apple-touch-icon" href="https://www.grouphelp.top/gh.png">
+
+    <meta name="description" content="Group Help sizga Telegram guruhingizni spamlardan, floodlardan, porno, NSFW, havfli havolalardan va xavfli foydalanuvchilardan himoya qilishga yordam beradi va ko'plab foydali funksiyalar bilan boshqaradi.">
+    <meta name="keywords" content="GroupHelpBot, Group Help, GroupHelp bot, guruhlarni himoya qilish, spam telegram, admin telegram, telegram guruhlari, admin Telegram guruhi, Telegram guruh boshqaruvi, spam Telegram guruhi, Telegram moderator bot, bot guruh moderator">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.grouphelp.top/uz">
+    <meta property="og:title" content="Guruplar yordamchisi - Telegram bot guruplarni boshqarish va himoya qilish uchun">
+    <meta property="og:image" content="/logo.jpg">
+    <meta property="og:description" content="Group Help sizga Telegram guruhingizni spamlardan, floodlardan, porno, NSFW, havfli havolalardan va xavfli foydalanuvchilardan himoya qilishga yordam beradi va ko'plab foydali funksiyalar bilan boshqaradi.">
+    <meta property="og:site_name" content="Group Help">
+    <meta property="og:locale" content="uz">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Guruplar yordamchisi - Telegram bot guruplarni boshqarish va himoya qilish uchun">
+    <meta name="twitter:description" content="Group Help sizga Telegram guruhingizni spamlardan, floodlardan, porno, NSFW, havfli havolalardan va xavfli foydalanuvchilardan himoya qilishga yordam beradi va ko'plab foydali funksiyalar bilan boshqaradi.">
+    <meta name="twitter:image" content="/logo.jpg">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"ImageObject","url":"https:\/\/www.grouphelp.top\/gh.png","contentUrl":"https:\/\/www.grouphelp.top\/gh.png","@id":"https:\/\/www.grouphelp.top\/#logo"},{"@type":"WebSite","url":"https:\/\/www.grouphelp.top\/","name":"Guruplar yordamchisi","inLanguage":"uz","description":"Group Help sizga Telegram guruhingizni spamlardan, floodlardan, porno, NSFW, havfli havolalardan va xavfli foydalanuvchilardan himoya qilishga yordam beradi va ko'plab foydali funksiyalar bilan boshqaradi","publisher":{"@id":"https:\/\/www.grouphelp.top\/#org"},"@id":"https:\/\/www.grouphelp.top\/#website"},{"@type":"Organization","name":"Group Help","email":"bruno@grouphelp.top","url":"https:\/\/www.grouphelp.top\/","image":{"@id":" https:\/\/www.grouphelp.top\/#logo"},"logo":{"@id":" https:\/\/www.grouphelp.top\/#logo"},"sameAs":["https:\/\/t.me\/GroupHelpBot"],"@id":"https:\/\/www.grouphelp.top\/#org"},{"@type":"WebPage","url":"https:\/\/www.grouphelp.top\/uz","name":"Guruplar yordamchisi - Telegram bot guruplarni boshqarish va himoya qilish uchun","isPartOf":[{"@id":"https:\/\/www.grouphelp.top\/#website"}],"inLanguage":"uz","@id":"https:\/\/www.grouphelp.top\/uz#webpage"}]}</script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css"
+        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+    <style>
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        /* color: inherit; */
+    }
+
+    .points,
+    div > ul > li,
+    ol > li
+     {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    ol > li > p
+     {
+      margin: 0;
+    }
+
+    ul,
+    li {
+      font-weight: normal;
+    }
+
+    @media only screen and (max-width: 400px) {
+        .no-small-device {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 401px) {
+        .only-small-device {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .menu-align {
+            right: 0;
+            left: auto;
+        }
+    }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="bg-dark text-light">
+        <div class="container">
+
+            <div class="row py-4">
+                <div class="col-4 offset-4 text-center">
+                    <a href="/">
+                        <img alt="Group Help Bot logotipi" src="/gh.png" height="60" width="60"
+                            style="border-radius: 50%; border: 2px solid white;">
+                    </a>
+                </div>
+                <nav class="col-4 float-right align-middle navbar navbar-expand-lg text-white">
+
+    <a class="dropdown-toggle text-white" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="flag-icon flag-icon-gb"> </span>
+        Inglizcha</a>
+        <div class="dropdown-menu menu-align dropdown-sm-left">
+                <a class="dropdown-item" href="/de"><span class="flag-icon flag-icon-de">
+            </span> Nemischa</a>
+                <a class="dropdown-item" href="/it"><span class="flag-icon flag-icon-it">
+            </span> Italiyacha</a>
+            </div>
+
+</nav>
+
+
+                <div class="col-12 text-center mt-2">
+                    <h1>
+                        <strong>GROUP HELP BOT</strong>
+                    </h1>
+                    <p class="h2">Telegram Bot guruhlarni boshqarish va himoya qilish uchun</p>
+                </div>
+                                <div class="col-12 text-center mt-1 no-small-device">
+                    <p class="h4">
+                        <small>Group Help sizning guruhingizni boshqarishni, ma'muriyatni va xavfsizligini soddalashtiradi</small>
+                    </p>
+                </div>
+                                <div class="col-12 text-center py-4 mt-4">
+                    <a href="https://t.me/GroupHelpBot?startgroup=start" target="_blank"
+                        class="btn btn-lg btn-info">Group Help botni guruhga qo'shing</a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</header>
+<div class="border"></div>
+<div class="row mt-2"></div>
+    <div class="container mt-4">
+        <div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="what_is_group_help_for" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>Group Help nima uchun?</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><p>Sizning guruhingizga Telegram orqali <strong>spam</strong>, <strong>adder</strong>, <strong>flood</strong>, <strong>porno</strong>, NSFW, qasr yoki xavfli havolalar yuborilganmi?<br>
+<strong>Group Help</strong> bu sizning Telegram guruhingizni boshqaruvchi <strong>avtomatik moderator</strong> bo'lib, zararli foydalanuvchilarni avtomatik tarzda jazolaydi.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="how_group_help_works" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>Group Help qanday ishlaydi?</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><p>Group Help Botni guruhingizga administrator sifatida qo'shing va /settings buyrug'ini konfiguratsiya qiling. Bot spam, flood va hujumlardan guruhingizni himoya qilish uchun tayyor bo'ladi.<br>
+Siz <strong>ban</strong> yoki <strong>mute</strong> qilish uchun so'zlarni taqiqlashni sozlashingiz mumkin.<br />
+Guruhingizga <strong>porno</strong> material yuborilishini avtomatik o'chirish va jazolash uchun anti-porno filtri mavjud.<br>
+Turli xil jazolarni sozlashingiz mumkin, jumladan, xabarlarni o'chirish, foydalanuvchini ban qilish, foydalanuvchini mute qilish va boshqalar.<br>
+VoIP foydalanuvchilarining guruhga kirishini oldini olish uchun captcha tekshiruvi mavjud.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="main_group_help_functions" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>Main Group Help funksiyalari</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><ul>
+<li><strong>HIMOYALASH</strong>
+<ul>
+<li><strong>Captcha</strong> - Guruhga qo'shilgan foydalanuvchilardan captcha yechishni talab qiling, avtomatik kirishlarni filtrlash uchun.</li>
+<li><strong>Anti-spam</strong> - Guruhga yuborilgan spam xabarlarini avtomatik tarzda o'chirib tashlash va yuboruvchisini jazolash.</li>
+<li><strong>Anti-flood</strong> - Juda qisqa vaqt ichida ko'p xabar yuboradiganlarni bloklaydi, guruhga zarar etkazishni maqsad qilganlarga qarshi.</li>
+<li><strong>Anti-porn</strong> - Group Help guruhingizga NSFW material yuborganlarni aniqlash va jazolash imkoniyatiga ega.</li>
+<li><strong>Taqiqlangan so'zlar</strong> - Taqiqlangan so'zlar ro'yxatini yaratish: ulardan foydalanadigan har qanday foydalanuvchi jazolanadi.</li>
+<li><strong>Tungi rejim</strong> - Tunda hech kim media yoki havolalarni yuborishi mumkin bo'lmaydi (yoki hech qanday xabar yuborishi mumkin emas) va guruhingiz yanada xavfsizroq bo'ladi.</li>
+</ul></li>
+<li><strong>BOSHQARUV</strong>
+<ul>
+<li><strong>Xush kelibsiz xabari</strong> - Har safar foydalanuvchi guruhingizga qo'shilganda yuboriladigan xabarni o'rnating.</li>
+<li><strong>Guruh qoidalari</strong> - /rules buyrug'i orqali guruhingiz qoidalarini osonroq ko'rib chiqish imkoniyatini taqdim etadi.</li>
+<li><strong>Maxsus buyruqlar</strong> - Siz botga o'zingiz xohlagan maxsus buyruqlarni yaratishingiz mumkin.</li>
+<li><strong>Takroriy xabarlarni yuborish</strong> - Guruhda belgilangan vaqtda (masalan, har 3 soatda) avtomatik tarzda yuboriladigan xabarlarni yuboring.</li>
+<li><strong>Kanaldan obuna bo'lish majburiyati</strong> - Faqat sizning Telegram kanaliga obuna bo'lgan foydalanuvchilarga guruhda yozishga (yoki qolishga) ruxsat bering.</li>
+<li><strong>Log Kanal</strong> - Guruhingizda bo'layotgan barcha voqealar maxfiy kanalda qayd etiladi, shuning uchun har doim maslahatlashishingiz mumkin va abadiy saqlanadi.</li>
+</ul></li>
+</ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="start_protecting_your_group" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>Guruhingizni hozir himoya qilishni boshlang!</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><p>Guruhingizni yaxshiroq himoya qilish va boshqarishni boshlash juda oddiy:
+<a href="https://t.me/GroupHelpBot?startgroup=start" target="_blank">bu yerga bosing</a> <strong>botni</strong> guruhga qo'shish uchun,
+so'ngra uni <strong>administrator</strong> sifatida sozlang va botning barcha funksiyalari va avtomatlashtirilgan sozlamalarini boshqarish uchun <strong>/settings</strong> buyrug'ini yuboring.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="how_to_create_a_clone" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>Group Help Bot-ni sozlash - klon yaratish</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><p>Agar botingizni yanada noyob qilishni xohlasangiz, o'zingizning tanlagan nomi va profil rasmingiz bilan moslashtirilgan Group Help bot klonini yaratishingiz mumkin.<br>
+<a href='https://t.me/s/Clonare/2' target='_blank'>Bu yerga bosing</a> shaxsiy nusxangizni <strong>bezkor</strong> olish uchun qanday qilib yaratishni bilib olish uchun.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <!--
+<div class="row mb-4"></div>
+<div class="border"></div>
+-->
+<footer class="footer mt-auto py-3 bg-dark text-light border-top">
+    <div class="container">
+        <span class="text-muted no-small-device">
+            Mualliflik huquqi &copy; 2016-2024 &middot; <span class="text-white font-weight-bold">Group Help</span> &middot; P.IVA/VAT IT07072510485
+        </span>
+        <span class="float-right no-small-device">
+                        <a href="https://www.grouphelp.top/privacy" class="text-white">Maxfiylik siyosati</a>
+                    </span>
+
+        <span class="text-muted only-small-device">
+                        <a href="https://www.grouphelp.top/privacy" class="text-white">Maxfiylik siyosati</a><br>
+                        P.IVA/VAT IT07072510485 <br /> Mualliflik huquqi &copy; 2016-2024
+        </span>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+    integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

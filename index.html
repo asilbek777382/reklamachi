@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="h-100">
+
+<head>
+    <title>Group Help Bot - Bot Telegram to manage and protect groups</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="icon" href="gh.png" type="image/png">
+    <link rel="canonical" href="https://www.grouphelp.top/en">
+    <link rel="shortcut icon" href="https://www.grouphelp.top/gh.png">
+    <link rel="apple-touch-icon" href="https://www.grouphelp.top/gh.png">
+
+    <meta name="description" content="Group Help helps you protect your Telegram group by removing spam, flood, porn, NSFW, links and dangerous users and managing it with many useful features.">
+    <meta name="keywords" content="GroupHelpBot, Group Help, GroupHelp bot, groups protection, spam telegram, admin telegram, telegram groups, admin Telegram group, Telegram group management, spam Telegram group, Telegram moderator bot, bot group moderator">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.grouphelp.top/en">
+    <meta property="og:title" content="Group Help Bot - Bot Telegram to manage and protect groups">
+    <meta property="og:image" content="/logo.jpg">
+    <meta property="og:description" content="Group Help helps you protect your Telegram group by removing spam, flood, porn, NSFW, links and dangerous users and managing it with many useful features.">
+    <meta property="og:site_name" content="Group Help">
+    <meta property="og:locale" content="en">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Group Help Bot - Bot Telegram to manage and protect groups">
+    <meta name="twitter:description" content="Group Help helps you protect your Telegram group by removing spam, flood, porn, NSFW, links and dangerous users and managing it with many useful features.">
+    <meta name="twitter:image" content="/logo.jpg">
+        <meta name="robots" content="index, follow">
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"ImageObject","url":"https:\/\/www.grouphelp.top\/gh.png","contentUrl":"https:\/\/www.grouphelp.top\/gh.png","@id":"https:\/\/www.grouphelp.top\/#logo"},{"@type":"WebSite","url":"https:\/\/www.grouphelp.top\/","name":"Group Help Bot","inLanguage":"it-IT","description":"Group Help ti aiuta a gestire il tuo gruppo telegram rimuovendo spam, flood, attacchi, link e utenti pericolosi","publisher":{"@id":"https:\/\/www.grouphelp.top\/#org"},"@id":"https:\/\/www.grouphelp.top\/#website"},{"@type":"Organization","name":"Group Help","email":"bruno@grouphelp.top","url":"https:\/\/www.grouphelp.top\/","image":{"@id":" https:\/\/www.grouphelp.top\/#logo"},"logo":{"@id":" https:\/\/www.grouphelp.top\/#logo"},"sameAs":["https:\/\/t.me\/GroupHelpBot"],"@id":"https:\/\/www.grouphelp.top\/#org"},{"@type":"WebPage","url":"https:\/\/www.grouphelp.top\/en","name":"Group Help Bot - Bot Telegram to manage and protect groups","isPartOf":[{"@id":"https:\/\/www.grouphelp.top\/#website"}],"inLanguage":"en","@id":"https:\/\/www.grouphelp.top\/en#webpage"}]}</script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css"
+        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+    <style>
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        /* color: inherit; */
+    }
+
+    .points,
+    div > ul > li,
+    ol > li
+     {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    ol > li > p
+     {
+      margin: 0;
+    }
+
+    ul,
+    li {
+      font-weight: normal;
+    }
+
+    @media only screen and (max-width: 400px) {
+        .no-small-device {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 401px) {
+        .only-small-device {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .menu-align {
+            right: 0;
+            left: auto;
+        }
+    }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="bg-dark text-light">
+        <div class="container">
+
+            <div class="row py-4">
+                <div class="col-4 offset-4 text-center">
+                    <a href="/">
+                        <img alt="logo group help bot" src="/gh.png" height="60" width="60"
+                            style="border-radius: 50%; border: 2px solid white;">
+                    </a>
+                </div>
+                <nav class="col-4 float-right align-middle navbar navbar-expand-lg text-white">
+
+    <a class="dropdown-toggle text-white" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="flag-icon flag-icon-gb"> </span>
+        English</a>
+        <div class="dropdown-menu menu-align dropdown-sm-left">
+                <a class="dropdown-item" href="/de"><span class="flag-icon flag-icon-de">
+            </span> Deutsch</a>
+                <a class="dropdown-item" href="/it"><span class="flag-icon flag-icon-it">
+            </span> Italiano</a>
+            </div>
+    
+</nav>
+
+
+                <div class="col-12 text-center mt-2">
+                    <h1>
+                        <strong>GROUP HELP BOT</strong>
+                    </h1>
+                    <p class="h2">The Telegram Bot to manage and protect groups</p>
+                </div>
+                                <div class="col-12 text-center mt-1 no-small-device">
+                    <p class="h4">
+                        <small>Group Help simplifies the management, administration and security of your group</small>
+                    </p>
+                </div>
+                                <div class="col-12 text-center py-4 mt-4">
+                    <a href="https://t.me/GroupHelpBot?startgroup=start" target="_blank"
+                        class="btn btn-lg btn-info">Add Group Help to the group</a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</header>
+<div class="border"></div>
+<div class="row mt-2"></div>
+    <div class="container mt-4">
+        <div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="what_is_group_help_for" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>What is Group Help for?</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><p>Have you ever received Telegram in your group <strong>spam</strong>, <strong>adder</strong>, <strong>flood</strong>, people who send <strong>porno</strong>, NSFW, swearing, links, ecc.?<br>
+<strong>Group Help</strong> is the <strong>automatic moderator</strong> that manages your Telegram group and punishes malicious users automatically for you.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="how_group_help_works" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>How does Group Help work?</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><p>Just add Group Help Bot to your group as an administrator and configure it with the command /settings. It will be ready to protect the
+your group from spam, flood and attacks.<br>
+You can set banned words so that the
+<strong>ban</strong> or <strong>mute</strong> of a user in the group when sent. <br />
+There is an anti-porn filter to be enabled to automatically delete and punish those who send content
+pornographic in your group.<br>
+You can adjust all kinds of punishments including message deletion, user ban, user mute etc.<br>
+There is a captcha check to prevent the entry of VoIP users who automatically spam your group.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="main_group_help_functions" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>Main Group Help functions</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><ul>
+<li><strong>PROTECTION</strong>
+<ul>
+<li><strong>Captcha</strong> - Ask users who join the group to resolve a captcha, to filter out unwanted automatic logins.</li>
+<li><strong>Anti-spam</strong> - Automatically delete spam messages sent to the group and punish the sender.</li>
+<li><strong>Anti-flood</strong> - Block those who send a lot of messages in too little time trying to damage the group.</li>
+<li><strong>Anti-porn</strong> - Group Help can detect and punish anyone who submits NSFW material in your group.</li>
+<li><strong>Banned words</strong> - Create a list of words to ban: anyone who uses them will be punished.</li>
+<li><strong>Night mode</strong> - Nobody will be able to send media and links (or no messages) at night and your group will be even safer.</li>
+</ul></li>
+<li><strong>MANAGEMENT</strong>
+<ul>
+<li><strong>Welcome message</strong> - Set a message to be sent every time a user joins your Telegram group.</li>
+<li><strong>Group regulation</strong> - The /rules command allows users to easily consult the rules of your group.</li>
+<li><strong>Custom commands</strong> - You can create your own custom commands which the bot will respond to as you please.</li>
+<li><strong>Sending repeated messages</strong> - Send messages in the group that repeat automatically with a certain frequency of your choice (for example every 3 hours).</li>
+<li><strong>Channel subscription obligation</strong> - Only allow users who are subscribed to your Telegram channel to write (or stay) in the group.</li>
+<li><strong>Log Channel</strong> - Everything that happens in your group will be recorded on a private channel, so you can be consulted whenever you want and forever.</li>
+</ul></li>
+</ul></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="start_protecting_your_group" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>Start protecting your group now!</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><p>Getting started protecting and managing your group better with Group Help Bot is very simple:
+<a href="https://t.me/GroupHelpBot?startgroup=start" target="_blank">click here</a> to <strong>add the bot</strong> to the group,
+then set it as <strong>administrator</strong> and send the command <strong>/settings</strong> to manage the bot at 360° in all its functions and automations.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="p-4 my-4 border rounded shadow-sm"  id="how_to_create_a_clone" >
+        <div itemscope="itemscope" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h2 itemprop="name">
+                <b>Customize your Group Help Bot - create a clone</b>
+            </h2>
+                        <div itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><p>If you want to make your bot even more unique, you can create a customized Group Help bot clone with a name and profile photo of your choice.<br>
+<a href='https://t.me/s/Clonare/2' target='_blank'>Click here</a> to find out how to create your own personalized copy <strong>for free</strong> in minutes.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <!--
+<div class="row mb-4"></div>
+<div class="border"></div>
+-->
+<footer class="footer mt-auto py-3 bg-dark text-light border-top">
+    <div class="container">
+        <span class="text-muted no-small-device">
+            Copyright &copy; 2016-2024 &middot; <span class="text-white font-weight-bold">Group Help</span> &middot; P.IVA/VAT IT07072510485
+        </span>
+        <span class="float-right no-small-device">
+                        <a href="https://www.grouphelp.top/privacy" class="text-white">Privacy Policy</a>
+                    </span>
+
+        <span class="text-muted only-small-device">
+                        <a href="https://www.grouphelp.top/privacy" class="text-white">Privacy Policy</a><br>
+                        P.IVA/VAT IT07072510485 <br /> Copyright &copy; 2016-2024
+        </span>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+    integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
